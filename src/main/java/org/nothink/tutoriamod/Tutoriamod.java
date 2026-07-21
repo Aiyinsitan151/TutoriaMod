@@ -6,11 +6,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Tutoriamod.MODID)
+@Mod(Tutoriamod.MOD_ID)
 public class Tutoriamod {
 
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "tutoriamod";
+    public static final String MOD_ID = "tutoriamod";
 
     public Tutoriamod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
