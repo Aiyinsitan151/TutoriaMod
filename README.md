@@ -30,7 +30,7 @@ MDK的获取方式有两种，forge官网下载和IDEA插件下载（推荐）
 
 下载连接：[Downloads for Minecraft Forge for Minecraft 1.20.1](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)（需要科学上网）
 
-![image-20260721143556764](dos/image-20260721143556764.png)
+![image-20260721143556764](docs/image-20260721143556764.png)
 
 我们选择最新版本，就是左边那个，点击MDK
 
