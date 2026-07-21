@@ -1,7 +1,25 @@
-.gradle
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
 .idea
-gradle
+
+# gradle
 build
+.gradle
+
+# other
+eclipse
 run
-run-data
-.gitignore
+
+# Files from Forge MDK
+forge*changelog.txt
