@@ -147,3 +147,9 @@ options.compilerArgs += ["-Xlint:-removal"]
 这里建议把MODID改成MOD_ID，没有别的原因，只是大多数人看得比较顺眼。
 
 由此，我们就完成了开发环境基本构建，以后我们所有的代码开发都将在这套开发环境上进行。
+
+## 5.修改模组配置文件
+
+我们打开src/main/resources/META-INF/mods.toml
+
+这里存放了模组的一些相关配置，如模组ID，模组作者，模组描述等。其中${}为占位符，引用的gradle.properties的对应内容，直接修改gradle.properties里的内容即可
