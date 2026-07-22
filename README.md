@@ -29,7 +29,8 @@ public class ModCreativeModeTabs {
 1. icon  决定了创造模式物品栏的图标
 2. title 决定了创造模式物品栏的标题，同时用于本地化
 3. displayItems 向创造模式物品栏中添加物品
-以上三个只是最小实现，我们可以添加更多的参数来扩展创造模式物品栏的功能，如自定义背景等，大家自行探索。
+
+以上三个配置只是一部分，我们可以添加更多的参数来扩展创造模式物品栏的功能，如自定义背景等，大家自行探索。
 ## 3.将注册器加载到MOD总线上
 ```java
 public class ModCreativeModeTabs {
@@ -43,9 +44,6 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.EXAMPLE_ITEM.get());
                     })
-                    .withLabelColor(0xffffff)
-                    .withSearchBar()
-                    .withBackgroundLocation(new ResourceLocation("tutorial_mod:textures/gui/container/creative_inventory/tab_example.png"))
                     .build());
 
     public static void register(IEventBus eventBus) {
