@@ -3,6 +3,7 @@ package org.nothink.tutorial_mod;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.nothink.tutorial_mod.init.ModCreativeModeTabs;
 import org.nothink.tutorial_mod.init.ModItems;
 
 
@@ -17,6 +18,7 @@ public class Tutorial_mod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         //region ModEventBus
         ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
         //end region
 
     }
