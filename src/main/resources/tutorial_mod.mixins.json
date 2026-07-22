@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "org.nothink.tutoriamod.mixin",
+  "package": "org.nothink.tutorial_mod.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "tutoriamod.refmap.json",
   "mixins": [
