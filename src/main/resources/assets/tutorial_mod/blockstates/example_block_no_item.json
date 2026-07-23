@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorial_mod:block/example_block_no_item"
+    }
+  }
+}

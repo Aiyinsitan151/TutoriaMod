@@ -2,7 +2,6 @@ package org.nothink.tutorial_mod.init;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +18,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("tab.example"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.EXAMPLE_ITEM.get());
+                        output.accept(ModBlocks.EXAMPLE_BLOCK_WITH_ITEM.get());
                     })
                     .build());
 

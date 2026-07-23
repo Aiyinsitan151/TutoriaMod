@@ -1,4 +1,6 @@
 {
   "item.tutorial_mod.example_item": "Example Item",
+  "block.tutorial_mod.example_block_with_item": "Example Block With Item",
+  "block.tutorial_mod.example_block_no_item": "Example Block No Item",
   "tab.example": "Example CreativeModeTab"
 }

@@ -1,4 +1,6 @@
 {
   "item.tutorial_mod.example_item": "示例物品",
+  "block.tutorial_mod.example_block_with_item": "有对应物品的示例方块",
+  "block.tutorial_mod.example_block_no_item": "无对应物品的示例方块",
   "tab.example": "示例创造模式物品栏"
 }
