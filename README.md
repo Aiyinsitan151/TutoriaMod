@@ -281,3 +281,25 @@ assets
 ```
 
 添加本地化后，当你进入游戏，鼠标悬浮在物品上，就会显示我们想要的名字。
+
+##  注册大量物品的推荐写法
+由于注册物品时一行太长，注册大量物品时未免显得混乱。对此，我们可以采用如下注册方式
+```java
+public class ModItems {
+    public static final DeferredRegister<Item> ITEMS;
+    public static final RegistryObject<Item> EXAMPLE_ITEM;
+
+    static {
+        ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Tutorial_mod.MOD_ID);
+        EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
+
+    }
+
+    //用于在主类登记注册器
+    public static void register(IEventBus bus) {
+        ITEMS.register(bus);
+    }
+    
+}
+
+```

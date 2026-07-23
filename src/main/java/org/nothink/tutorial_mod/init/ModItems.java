@@ -8,14 +8,18 @@ import net.minecraftforge.registries.RegistryObject;
 import org.nothink.tutorial_mod.Tutorial_mod;
 
 public class ModItems {
-    //创建物品注册器
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Tutorial_mod.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS;
+    public static final RegistryObject<Item> EXAMPLE_ITEM;
 
-    //进行物品的注册
-    public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
+    static {
+        ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Tutorial_mod.MOD_ID);
+        EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
+
+    }
 
     //用于在主类登记注册器
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
     }
+
 }
